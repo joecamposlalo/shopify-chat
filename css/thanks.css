@@ -1,0 +1,176 @@
+
+/*Seccion de gracias*/
+
+
+.thankcont{
+
+    background: linear-gradient(179.7deg, #0092B7 34.7%, #00EDF5 141.08%);
+
+}
+
+#thanktext{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 110px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+#thanksub{
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#imgtop{
+
+   margin-top: 90px;
+}
+
+#imgbot{
+    display: none;
+}
+
+
+@media (max-width: 730px) {
+
+    #imgtop{
+        display: none;
+    }
+
+    #thanktext{
+        margin-top: 60px;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    #thanksub{
+
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 21px;
+        text-align: center
+    }
+
+    #imgbot{
+        display: block;
+    }
+}
+
+/*Seccion de videos de clientes*/
+
+#customersh1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 68px;
+    text-align: center;
+    color: #003F4F;
+}
+
+
+
+/*Seccion de servicios */
+
+#servicescont{
+
+    background: #004B5F;
+    width: 100%;
+}
+
+#servicest1{
+    margin-top:80px ;
+    margin-bottom: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+
+    text-align: center;
+
+    color: #E4FCFF;
+}
+
+#servicest2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+ 
+    text-align: center;
+
+    color: #E4FCFF;
+}
+
+#servicesp{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+
+#servicesp2{
+
+    font-weight: 700;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+#servicescap{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+
+
+
+    text-align: center;
+
+    color: #D7FE34;
+}
+
+.servimages{
+
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#servicespacing{
+    width: 15%;
+}
+
+@media (max-width: 730px) {
+
+    #servicespacing{
+        width: 100%;}
+    #servicesp{
+        
+        font-size:18px ;
+    }
+    #servicest1{
+        font-size: 30px;
+    }
+}

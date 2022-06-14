@@ -1,0 +1,25 @@
+.announcement {
+  align-items: center;
+  background: linear-gradient(360deg, #C4C4C4 -90.57%, #E0E0E0 120.75%);
+  color: black;
+  display: flex;
+  height: auto;
+  font-family: Arial, sans;
+  font-size: 0.8em;
+  justify-content: center;
+  padding: 10px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.announcement a {
+  color: #003F4F
+}
+
+.announcement p {
+  margin: 0;
+}
