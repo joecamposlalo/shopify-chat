@@ -740,3 +740,69 @@ height: 470px;
   margin-left: 80px;
     margin-right: 100px;
 }
+
+#imgdisco2back{
+  background: #00A5C4;
+ 
+}
+
+#custom2_title{
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  /* identical to box height, or 36px */
+
+
+  color: #003F4F;
+}
+
+#custom2_p1{
+
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 119.5%;
+/* or 26px */
+
+
+color: #003F4F;
+margin-bottom: 20px;
+}
+
+#custom2_p2{
+
+  font-family: 'Code Saver';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 119.5%;
+  /* or 26px */
+
+
+  color: #003F4F
+}
+
+#imgdisco2{
+
+  margin-top: 120px;
+  margin-right: 22px;
+  margin-bottom: 20px;
+}
+
+#custom2rcont{
+
+  margin-left: 150px;
+    margin-right: 125px;
+}
+
+#imgdisco3{
+  margin-top: 120px;
+  margin-right: -13px;
+  margin-bottom: 20px;
+}
