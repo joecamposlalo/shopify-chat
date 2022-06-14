@@ -239,6 +239,12 @@ color: #003F4F;
   max-width: 500px;
   height: auto;
   margin-bottom: 30px;
+  display: block;
+  margin-left: 0 auto;
+}
+
+#dotsyellow{
+  margin-left: 40px;
 }
 .whybook{
   background: #004B5F;
