@@ -1,6 +1,14 @@
 
 /*Seccion de gracias*/
 
+.logothanks {
+    width: 258px;
+    height: 100%;
+    background-color: transparent;
+    margin: 50px;
+    margin-top: 100px;
+  }
+
 
 .thankcont{
 
@@ -31,11 +39,14 @@
     text-align: center;
 
     color: #FFFFFF;
+    padding-right: 130px;
+    padding-left: 130px;
+
 }
 
 #imgtop{
 
-   margin-top: 90px;
+  
 }
 
 #imgbot{
@@ -43,7 +54,7 @@
 }
 
 
-@media (max-width: 730px) {
+@media (max-width: 390px) {
 
     #imgtop{
         display: none;
@@ -52,21 +63,33 @@
     #thanktext{
         margin-top: 60px;
         font-weight: 700;
-        font-size: 70px;
-        line-height: 30px;
+        font-size: 60px;
+        
         text-align: center;
     }
 
     #thanksub{
 
         font-weight: 400;
-        font-size: 20px;
+        font-size: 14px;
         line-height: 21px;
-        text-align: center
+        text-align: center;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
     #imgbot{
         display: block;
+    }
+
+    .thankcont{
+
+        background: linear-gradient(117.71deg, #0092B7 36.54%, #00EDF5 95.28%);
+    
+    }
+
+    .thanktextcont{
+        margin-bottom: 0px !important;
     }
 }
 
