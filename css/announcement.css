@@ -23,3 +23,11 @@
 .announcement p {
   margin: 0;
 }
+
+@media screen and (max-width: 730px) {
+  .announcement {
+    position: sticky;
+    text-align: center;
+    font-size: 15px;
+  }
+}

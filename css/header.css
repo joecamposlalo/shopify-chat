@@ -89,6 +89,6 @@ header nav ul {
 
 @media (max-width: 532px) {
   .header__container {
-    margin-top: 32px;
+    margin-top: 0px;
   }
 }

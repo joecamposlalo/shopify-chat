@@ -260,7 +260,7 @@ color: #003F4F;
   /* identical to box height */
   text-align: center;
   color: #FFFFFF;
-  margin-top: 178px;
+  
   padding-top: 100px;
 }
 
@@ -312,11 +312,25 @@ color: #FFFFFF;
   .book_tcont{
 
      margin-left: 0;
+     padding: 50px;
   }
 
   .booktitle{
     margin-top: 0;
+    font-size: 20px;
   }
+
+  .booklisttitle{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27.43px;
+    color: #D7FE34;
+  }
+
+
 }
 
 
