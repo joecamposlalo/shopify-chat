@@ -692,6 +692,7 @@ color: #FFFFFF;
 #discovery_img_back{
 
   background: linear-gradient(117.71deg, #00EDF5 36.54%, #00CDD3 95.28%);
+  width: 50%;
 }
 
 #custom_title{
@@ -737,14 +738,13 @@ color: #FFFFFF;
 
 #imgdisco{
   margin-top: 75px;
-  margin-left: 10px;
+ 
   width: 658.72px;
-height: 470px;
+  height: 470px;
 }
 
 #custom1rcont{
-  margin-left: 80px;
-    margin-right: 100px;
+ 
 }
 
 #imgdisco2back{
@@ -803,12 +803,11 @@ margin-bottom: 20px;
 
 #custom2rcont{
 
-  margin-left: 150px;
-    margin-right: 125px;
+
 }
 
 #imgdisco3{
   margin-top: 120px;
-  margin-right: -13px;
+  width: 600px;
   margin-bottom: 20px;
 }
