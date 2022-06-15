@@ -1,6 +1,19 @@
 
 /*Seccion de gracias*/
 
+.announcethankstext{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #003F4F;
+    margin: 20px;
+    padding: 10px;
+}
+
 .logothanks {
     width: 258px;
     height: 100%;
@@ -61,7 +74,7 @@
     }
 
     #thanktext{
-        margin-top: 60px;
+        margin-top: 0px;
         font-weight: 700;
         font-size: 60px;
         
@@ -91,6 +104,27 @@
     .thanktextcont{
         margin-bottom: 0px !important;
     }
+
+    .announcement{
+      display: none !important;
+    }
+    
+    .announcethankstext{
+        display: none;
+    }
+
+    .logothanks {
+        width: 258px;
+        height: 100%;
+        background-color: transparent;
+        margin: 50px;
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
+    
+    
+    
+
 }
 
 /*Seccion de videos de clientes*/
