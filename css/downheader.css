@@ -48,9 +48,33 @@
     }
 
     .icon-section h3{
-      font-size: 30px;
+      font-size: 20px;
       text-align: center;
       font-weight: 700;
+      color: #003F4F;
+    }
+
+    .iconimages{
+      height: 43px;
+      width: 83px;
+
+
+    }
+    .column4 {
+      
+      flex: 40%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .column4 p{
+      
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      
+      text-align: center;
+
       color: #003F4F;
     }
   }

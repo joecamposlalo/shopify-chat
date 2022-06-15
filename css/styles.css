@@ -312,7 +312,8 @@ color: #FFFFFF;
   .book_tcont{
 
      margin-left: 0;
-     padding: 50px;
+     padding: 48px;
+     padding-top: 20px;
   }
 
   .booktitle{
