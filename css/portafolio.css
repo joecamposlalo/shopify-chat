@@ -49,6 +49,7 @@
 }
 
 
+
 .wrapper_portafolio{
     width: 100%;
     max-width: 1920px;
@@ -127,4 +128,7 @@
     }
 }
 
-
+.col-md-4{
+  display: flex;
+  flex-direction: column-reverse;  
+}
