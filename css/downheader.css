@@ -4,8 +4,30 @@
   font-weight: 700;
   color: #003F4F;
 }
+
+@media screen and (max-width: 768px) {
+  .icon-section h3{
+    font-size: 30px;
+  }
+}
+
+.icon-section p{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: #003F4F;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-section p{
+    font-size: 16px;
+  }
+}
+
+
 .icon-section{
     margin-top: 50px;
+    padding: 0 20px;
 }
 
 
