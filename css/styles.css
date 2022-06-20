@@ -86,7 +86,7 @@ color: #003F4F;
 
 
   background-color: #003F4F;
-  z-index: -100;
+  z-index: 0;
   position: relative;
  
 }
@@ -114,8 +114,7 @@ color: #003F4F;
   font-family: 'Poppins',sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
-  line-height: 100px;
+  font-size: 20px;    
 }
 
 #progressbar li:before {
@@ -129,7 +128,7 @@ color: #003F4F;
   font-size: 12px;
   
   color: #003F4F;
-  background: white;
+  background: #E4FCFF;
   border-radius: 25px;
   margin: 20px auto 10px auto;
   justify-content: center;
@@ -146,7 +145,7 @@ color: #003F4F;
   content: '';
   width: 100%;
   height: 2px;
-  background: white;
+  background: #E4FCFF;
   position: absolute;
   left: -49%;
   top: 35px;
@@ -171,14 +170,7 @@ color: #003F4F;
   font-weight: 700;
 }
 
-.steptext{
 
-  margin-top: 60px;
-  color: white;
-  text-align: center;
-  margin-bottom: 50px;
-  font-family: Poppins,sans-serif;
-}
 
 .toptext{
 
@@ -198,19 +190,20 @@ color: #003F4F;
 .stepbutton{
 
   background: #D7FE34;
-  width: 250.04px;
-  height: 55px;
+  height: 45px;
   border-radius: 0;
   margin-bottom: 20px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 23px;
-  line-height: 45px;
+  font-size: 20px;
+  line-height: 30px;
   justify-content: center;
   text-align: center;
 }
-
+.desktop-progress-text{
+  padding-top: 50px;
+}
 @media screen and (max-width: 730px) {
   #progressbar li{
 
@@ -219,10 +212,15 @@ color: #003F4F;
   }
   .stepbutton{
 
-    width: 135.04px;
-    height: 50px;
+    width: 180px;
     font-size: 13px;
-    line-height: 40px;
+    line-height: 30px;
+    background: transparent;
+    color: #D7FE34;
+    border-color: #D7FE34;
+  }
+  .stepbutton:hover{
+     color: #D7FE34;
   }
 }
 
@@ -305,34 +303,177 @@ text-align: left;
 color: #FFFFFF;
 }
 
+.vid-row{
+  display: flex;
+  justify-content: center;
+}
+.vid-video{
+  width: 100%;
+  height: auto;
+}
+.vid-col{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.vid-container{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    margin-top: 80px;
+}
+.clients p{
+    font-size: 40px;
+    color: #003F4F; 
+    font-weight: 500;
+    text-align: center;
+}
+.vid-review-author{
+  font-size: 20px;
+  color: #003F4F;
+  font-weight: 700;
+  margin: 0;
+}
+.vid-review-company{
+  font-size: 16px;
+  color: #003F4F;
+}
+.clients{
+  margin-bottom: 60px;
+}
+.vid-metrics{
+  margin-top: 10px;
+}
+.vid-metrics-row{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+.vid-metrics-col{
+  width: 50%;
+}
 
-
-
-@media screen and (max-width: 730px) {
-  .book_tcont{
-
-     margin-left: 0;
-     padding: 48px;
-     padding-top: 20px;
-  }
-
-  .booktitle{
-    margin-top: 0;
-    font-size: 20px;
-    line-height: 10px;
-  }
-
-  .booklisttitle{
-
-    font-family: 'Poppins';
-    font-style: normal;
+.vid-metrics-number{
+    font-size: 35px;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 27.43px;
-    color: #D7FE34;
+    color: #000;
+}
+.vid-metrics-leyend{    
+    font-size: 16px;  
+    color: #000;
+}
+@media screen and (max-width: 992px) {
+
+  .vid-row{
+    flex-direction: column;
+  }
+  .vid-col{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 60px;
   }
 
+  .vid-header{
+    text-align: center;
+  }
+  .clients {
+      margin-bottom: 30px;
+  }
 
+}
+.progressbarMobile{
+  display: none; 
+}
+.steptext{
+
+  margin-top: 60px;
+  color: #E4FCFF;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: Poppins,sans-serif;
+}
+@media screen and (max-width: 730px) {
+.progress-bold{
+  font-weight: 700;
+}
+.progress-line{
+    border-left: 2px solid #E4FCFF;
+    height: 200px;
+    display: block;
+    position: absolute;
+    left: 18.3%;
+    top: 90px;
+    z-index: -1;
+}
+.step-circle{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    color: #003F4F;
+    background: #E4FCFF;
+    border-radius: 25px;
+    margin: auto;
+    font-family: Poppins,sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    justify-content: center;
+}
+.steptext{
+  margin-bottom: 0px;
+}
+.progressbarMobile{  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.progress-row{
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  align-items: center;
+  z-index: 1;
+}
+.progress-step{
+  width: 33%;
+  text-align: center;
+}
+.progress-text {
+    width: 67%;
+    line-height: 25px;
+    font-size: 17px;
+    color: #E4FCFF;
+}
+.progressbarDesktop{
+    display: none; 
+}
+.vid-container{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 30px;
+  }
+  .vid-review-author{
+    font-size: 18px;
+  }
+
+  .vid-metrics-number{
+    font-size: 32px;
+  }
+  .vid-col{    
+    margin-bottom: 60px;
+  }
+  .clients p{
+    font-size: 20px;
+    line-height: 30px; 
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+ 
 }
 
 
@@ -364,6 +505,45 @@ color: #FFFFFF;
   float: right;
 }
 
+@media screen and (max-width: 992px) {
+ .whybook{
+  padding-bottom: 0;
+}
+  .book_tcont{
+    --bs-gutter-x: none;
+    --bs-gutter-y: none;
+     margin-left: 0;
+     padding: 48px;
+     padding-top: 20px;
+     margin-left: auto;
+      margin-right: auto;
+      max-width: 500px;
+  }
+
+
+  .leoimagen{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}  
+@media screen and (max-width: 730px) {
+
+  .booklisttitle{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27.43px;
+    color: #D7FE34;
+  }
+    .booktitle{
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 10px;
+  }
+
+}
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -581,7 +761,7 @@ color: #FFFFFF;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-
+  background-color: #D7FE34;
   color: #20290B;
 
   background: #D7FE34;
@@ -621,6 +801,8 @@ color: #FFFFFF;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   
   /* identical to box height */
 
@@ -629,9 +811,114 @@ color: #FFFFFF;
   color: #FFFFFF;
   
 }
+.talkbook_btn_text{
+  color: #003F4F;
+  text-decoration-line: none;
+}
+.custom-row{
+    display: flex;
+    align-items: center;
+}
+.custom-col{
+  width: 50%;  
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.custom-col-light-bg{
+  background:#00DFE7;
+}
+.custom-col-blue-bg{
+  background: #00A5C4;
+}
+.custom-col-text{
+  max-width: 550px;  
+  text-align: left;
+  margin: 0 60px;
+}   
+.custom-icon-box
+{
+  width: 100%;
+}
 
 
-@media screen and (max-width: 500px) {
+.img-custom{
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.custom_title{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 54px;
+  margin-bottom: 40px;
+  color: #003F4F;
+  margin-top: 10px;
+}
+.custom_p1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 40px;
+  color: #003F4F
+
+}
+
+.custom_p2{
+  font-family: 'Code Saver';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #003F4F
+
+}
+.custom-icon-box img{
+  max-width: 64px;
+}
+.custom-row-reverse{
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px) {
+.custom-icon-box img{
+  max-width: 40px;
+}
+.custom_title{
+  font-size: 24px;
+  line-height: 43px;
+  margin-bottom: 10px;
+}
+.custom_p1{
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.custom_p2{
+  font-size: 18px;
+  line-height: 21px;
+  color: #003F4F
+
+}  
+custom-col-text { 
+    margin: 0 40px;
+}
+
+.custom-row{
+  flex-direction: column;
+}
+.custom-col{
+  width: 100%;
+  min-height: 440px;
+}
 
   #talkco_title{
     
@@ -652,9 +939,8 @@ color: #FFFFFF;
 
   #talkbook_btn{
   
-    width: 158px;
-    height: 38px;
-    background: none;
+    min-width: 158px;
+    height: 38px;    
     border: 1px solid #D7FE34;
     filter: drop-shadow(0px 4px 4px rgba(0, 237, 245, 0.15));
 
@@ -664,12 +950,12 @@ color: #FFFFFF;
     font-size: 14px;
     line-height: 21px;
     margin-left: 35px;
-    color: #D7FE34;
+    color: #003F4F;
     
   }
 
   #proposal_btn{
-    width: 159px;
+    min-width: 158px;
     height: 38px;
     left: 128px;
     top: 4470px;
@@ -694,7 +980,6 @@ color: #FFFFFF;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    
     /* identical to box height */
   
     text-align: center;
@@ -705,63 +990,8 @@ color: #FFFFFF;
 
 }
 
-#discovery_img_back{
-
-  background: linear-gradient(117.71deg, #00EDF5 36.54%, #00CDD3 95.28%);
-  width: 50%;
-}
-
-#custom_title{
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 180%;
-  margin-bottom: 40px;
 
 
-  color: #003F4F;
-}
-
-#custom_p1{
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 119.5%;
-  /* or 26px */
-  margin-bottom: 40px;
-
-  color: #003F4F
-
-}
-
-#custom_p2{
-
-  font-family: 'Code Saver';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 119.5%;
-  /* or 26px */
-
-
-  color: #003F4F
-
-}
-
-#imgdisco{
-  margin-top: 75px;
- 
-  width: 658.72px;
-  height: 470px;
-}
-
-#custom1rcont{
- 
-}
 
 #imgdisco2back{
   background: #00A5C4;
@@ -826,4 +1056,145 @@ margin-bottom: 20px;
   margin-top: 120px;
   width: 600px;
   margin-bottom: 20px;
+}
+.swal2-title{
+    font-family: 'Poppins';
+    color: #003F4F !important;
+    font-size: 22px !important;
+    text-align: center !important;
+    padding-top: 80px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    padding-bottom: 30px !important;
+}
+.swal2-styled.swal2-confirm{
+  background-color: #003F4F !important;
+  color: #FFF !important;
+   min-width: 200px;
+}
+.swal2-actions:not(.swal2-loading) .swal2-styled:hover{
+  background-image: none !important;
+}
+.swal2-styled.swal2-confirm:focus{
+  box-shadow: none !important;
+}
+
+.book_tcont{
+   --bs-gutter-x: none;
+    --bs-gutter-y: none;
+}
+.mobile-bottom-button{
+  display: none;
+}
+@media screen and (max-width: 730px)
+{
+  .mobile-bottom-button {    
+      bottom: 0;
+      position: fixed;      
+      align-items: center;
+      background: #004B5F;    
+      color: white;
+      display: flex;
+      height: auto;
+      font-family: 'Poppins',Arial, sans;
+      font-size: 20px;
+      justify-content: center;
+      padding: 15px;
+      right: 0;
+      text-align: center;    
+      width: 100%;
+      z-index: 1;
+      font-weight: 700;
+      text-decoration: none;
+  }
+  .mobile-bottom-button:hover{
+    color: white;
+  }
+
+}
+
+.reviews{
+  min-height: 470px;
+  width: 100%;
+  background: #E4FCFF;
+  padding: 45px 80px;
+  margin-top: 30px;
+}
+.reviews-header{  
+  color: #003F4F;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+}
+.swiper-slide{
+  background:#D8FBFF;
+  padding: 25px 45px;
+  border-radius: 41px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mySwiper{
+  width: 100%;
+  height: 350px;
+  margin-top: 100px;
+  z-index: 0 !important;
+  max-width: 1380px;
+}
+.review-desc{
+  padding-top: 15px;
+    font-size: 17px;
+    line-height: 25px;
+    color: #202020;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.review-author-row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.review-author-col-left{
+  padding-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review-author
+{
+  color: #003F4F;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.review-company
+{
+  color: #003F4F;
+  font-size: 20px;  
+  line-height: 30px;
+}
+
+@media screen and (max-width: 960px)
+{
+  .reviews{
+    margin-top: 0;
+    padding: 45px 20px;
+  }
+  .reviews-header {  
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .reviews-title{
+    padding-top: 15px;
+  }
+  .mySwiper{
+   height: 300px;
+    margin-top: 60px;  
+  }
+  .review-author,.review-company,.review-desc{
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

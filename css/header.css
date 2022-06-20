@@ -68,7 +68,7 @@ header nav ul {
     color: black;
   }
 
-  header nav ul li a.download {
+  header nav ul li .download {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -78,9 +78,12 @@ header nav ul {
     text-decoration-line: underline;
     color: #FFFFFF;
     padding: 5px;
+    
   }
 }
-
+header nav ul li .download {
+  cursor: pointer;
+}
 @media (min-width: 1024px) {
   .header__container header {
     padding: 20px 50px;
@@ -89,6 +92,11 @@ header nav ul {
 
 @media (max-width: 532px) {
   .header__container {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 730px) {
+  .header__container{
     margin-top: 0px;
   }
 }

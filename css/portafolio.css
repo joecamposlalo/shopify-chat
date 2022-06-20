@@ -1,9 +1,10 @@
 .title-portafolio h5{
-    font-size: 25px;
+    font-size: 40px;
     color: #003F4F; 
     font-weight: 700;
     text-align: left;
     margin-top: 30px;
+    line-height: 60px;
     
 }
 .title-portafolio p{
@@ -11,6 +12,7 @@
     color: #003F4F; 
     font-weight: 400;
     text-align: left;
+    line-height: 30px;
     
 }
 
@@ -59,27 +61,30 @@
     margin-top: 3rem;
     text-align: center;
 }
-.title-portafolios h5{
-    font-size: 40px;
+.title-portafolios h5{    
     color: #003F4F; 
-    font-weight: 700;
+    font-weight: 700;    
+    margin-top: 100px;
+    padding-bottom: 10px;
+    font-size: 48px;
     text-align: center;
-    margin-top: 40px;
-    padding-bottom: 40px;
 }
 
 .title-portafolios p{
   font-size: 20px;
+  line-height: 30px;
   color: #003F4F; 
   font-weight: 400;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0px;
   padding-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .scroll-item{
-    position: relative;
-    height: 300px;
+    position: relative;    
     overflow: hidden;
     box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.75);
 }
@@ -88,24 +93,28 @@
     background-size: cover;
     background-position: top;
     transition: all 18s ease;
+    height: 420px;
 }
 .scroll-item:nth-child(4){
     background: url(/assets/img/bettas-home.png);
     background-size: cover;
     background-position: top;
     transition: all 12s ease;
+    height: 390px;
 }
-.scroll-item:nth-child(5){
-    background: url(/assets/img/HOME-PAGE.png);
+.scroll-item:nth-child(5){    
+    background: url(/assets/img/trendy.png);
     background-size: cover;
     background-position: top;
     transition: all 12s ease;
+    height: 380px;
 }
 .scroll-item:nth-child(8){
-  background: url(/assets/img/trendy.png);
+  background: url(/assets/img/HOME-PAGE.png);
   background-size: cover;
   background-position: top;
   transition: all 10s ease;
+  height: 380px;
 }
 .scroll-item img{
     width: 100%;
@@ -117,14 +126,85 @@
     align-items: flex-start;
     gap: 3rem;
     margin: 3rem 0;
+    margin-top: 80px;
 }
 .scroll-item:hover{
     background-position: bottom;
 }
+.author{
+     text-align: left;
+     font-size: 20px;
+     line-height: 30px;
+     font-weight: 700;
+     padding-bottom: 10px;
 
+}
+.portafolio-box{
+    margin-bottom: 100px;
+}
+.img-portafolio-mob{
+    display: none;
+}
 @media screen and (max-width: 768px){
     .scroll-list{
         grid-template-columns: repeat(1, 1fr);
+        margin-top: 0px;
+    }
+    .title-portafolios p{
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: justify;
+        font-size: 15px;
+        line-height: 22.5px;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+    .title-portafolios h5{
+        font-size: 20px;
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 40px;
+        line-height: 30px;
+        margin-top: 40px;
+    }
+    .title-portafolio h5{
+        font-size: 20px;        
+        margin-top: 30px;
+        line-height: 30px;
+        padding-left: 20px;
+        padding-right: 40px;
+        margin-top: 0px;
+    }
+    .title-portafolio p{
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: justify;
+        font-size: 15px;
+        line-height: 22.5px;
+        margin-bottom: 0;
+    }
+    .author{
+    
+     font-size: 15px;
+     line-height: 22px;
+     padding-left: 40px;
+     padding-right: 40px;
+     padding-bottom: 0px;
+
+    }
+    .portafolio-box{
+        margin-bottom: 40px;
+    }
+    .scroll-item{
+        display: none;
+    }
+    .img-portafolio-mob{
+        display: block;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        width: 100%;
     }
 }
 
