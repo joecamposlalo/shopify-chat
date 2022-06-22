@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Shopify Chat</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />  
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+    type="text/css" />
+  <!-- Fuentes-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap y Estilos Css-->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/announcement.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/styles-draft.css">
+  <link rel="stylesheet" href="css/downheader.css">  
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/portafolio.css">
+  <link rel="stylesheet" href="css/calendar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/testimonials.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55919462-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-55919462-1');
+  </script>
+
+  <!-- Klaviyo -->
+  <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=X5Tqub"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '810651199135407');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=810651199135407&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+ <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+</head>
+
+<body>
+  <!-- Announcement -->
+  <div class="announcement">
+    <p><b>Limited time offer:</b> Get 20 hours of free design & web development.<button id="showTerms" ><b>Terms & conditions</b></button></p>
+  </div>
+  <a class="mobile-bottom-button" href="https://calendly.com/solvedpuzzleagency/shopify-design-web-development?back=1&month=2022-06">
+    GET A FREE CONSULTATION
+  </a>
+
+  <!-- Header -->
+  <div class="header__container">
+    <header>
+      <img src="assets/img/Logo.png" alt="logo" class="logo">
+      <nav>
+        <ul>
+          <li>
+            <div class="download klaviyo-download-list">Download Pricelist</div>
+          </li>
+          <li>
+            <a class="phone" href="tel:(888)2224831"><svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 6.83049C0.0247036 4.50234 1.21048 2.90939 3.25071 2.49696C4.52367 2.24293 5.02937 2.56271 5.36796 3.83438C5.60627 4.72051 5.82715 5.61412 6.09453 6.49278C6.38516 7.44615 6.11487 8.18584 5.3912 8.81644C4.56872 9.53073 4.54401 9.78626 5.18921 10.6784C6.16813 12.0719 7.29336 13.3503 8.54455 14.4904C9.53124 15.3661 9.8335 15.3407 10.7068 14.3783C11.2242 13.809 11.8011 13.5176 12.5858 13.7731C13.4141 14.0436 14.27 14.2214 15.0983 14.4979C16.6328 14.9999 17.0949 16.0146 16.5514 17.6045C16.2158 18.5938 15.5226 19.205 14.5955 19.5711C13.8106 19.8804 12.9729 20.0229 12.133 19.99C11.293 19.9571 10.4683 19.7495 9.70853 19.3798C4.8608 17.1039 1.52436 13.4025 0.132233 8.00802C0.036325 7.63294 0.0421415 7.22947 0 6.83049Z"
+                  fill="#003F4F" />
+                <path
+                  d="M18.9867 11.0654C19.0332 11.7737 18.9678 12.2609 18.3764 12.3446C17.7849 12.4283 17.5132 11.9829 17.4246 11.448C17.2584 10.2916 16.9689 9.15755 16.5614 8.06633C15.3858 5.10757 13.2569 3.16346 10.4349 1.95306C10.1225 1.81857 9.79695 1.71247 9.49615 1.55557C9.4051 1.5177 9.32246 1.46125 9.25323 1.38961C9.18399 1.31798 9.1296 1.23265 9.09333 1.13879C9.05707 1.04494 9.03969 0.944486 9.04224 0.843524C9.04478 0.742561 9.06721 0.64318 9.10816 0.551381C9.25348 0.116533 9.59061 -0.085199 10.0266 0.0388298C10.4686 0.165281 10.9005 0.326647 11.3184 0.521493C15.8435 2.61354 18.4171 6.18348 18.9867 11.0654Z"
+                  fill="#003F4F" />
+                <path
+                  d="M15.8174 10.9399C15.8378 11.4644 15.7317 11.9337 15.1461 11.9979C14.5924 12.0592 14.3221 11.6647 14.2059 11.1596C14.0998 10.7008 14.0475 10.2271 13.9153 9.77735C13.2759 7.53586 11.8649 5.99522 9.80283 5.05828C9.6052 4.96862 9.39885 4.89391 9.20122 4.80126C8.77981 4.60251 8.52551 4.28721 8.69843 3.79558C8.87136 3.30395 9.25209 3.10968 9.7418 3.24417C10.464 3.45562 11.1485 3.78508 11.769 4.21996C14.1376 5.81291 15.5065 8.04095 15.8174 10.9399Z"
+                  fill="#003F4F" />
+                <path
+                  d="M12.7632 10.7247C12.7908 11.2537 12.631 11.6796 12.073 11.7707C11.4917 11.8708 11.2156 11.4719 11.1444 10.9608C10.9148 9.34843 10.0269 8.32332 8.57814 7.74203C8.11023 7.55375 7.91841 7.15775 8.11168 6.65267C8.29187 6.17897 8.66678 6.08184 9.12889 6.18196C10.9453 6.58244 12.7458 8.82243 12.7632 10.7247Z"
+                  fill="#003F4F" />
+              </svg>&nbsp;&nbsp;(888)222-4831</a>
+          </li>
+          <li>
+            <a class="calendar"
+              href="https://calendly.com/solvedpuzzleagency/shopify-design-web-development?back=1&month=2022-06"><svg
+                width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.93787 18.986C7.40639 18.986 4.87492 18.9531 2.34428 18.9992C2.03442 19.0046 1.72663 18.9485 1.43934 18.8343C1.15206 18.7202 0.891173 18.5502 0.672306 18.3347C0.453438 18.1191 0.281083 17.8624 0.165561 17.5799C0.0500395 17.2975 -0.00627651 16.995 -1.84565e-05 16.6906C0.0184472 12.6101 0.00501559 8.52795 0.00837298 4.44992C0.00837298 3.56852 0.323969 2.84378 1.13226 2.37628C1.36999 2.22949 1.64466 2.15069 1.92545 2.14871C2.52642 2.14871 3.12823 2.16273 3.72921 2.14047C4.03976 2.12893 4.11782 2.27074 4.12286 2.53211C4.1279 2.79348 4.08509 3.08536 4.1791 3.35003C4.39397 3.95522 5.18128 4.4425 5.76043 4.33944C6.51584 4.20669 7.03876 3.62459 7.05806 2.89077C7.07737 2.15696 7.07821 2.14871 7.81348 2.14871H12.3023C12.9276 2.14871 12.9276 2.14871 12.9436 2.75803C12.9646 3.56027 13.3498 4.09126 14.0448 4.27842C14.2685 4.33726 14.5031 4.3442 14.73 4.2987C14.9569 4.2532 15.1699 4.1565 15.3523 4.01625C15.5346 3.87599 15.6813 3.69602 15.7807 3.49054C15.88 3.28505 15.9294 3.05969 15.9249 2.83223C15.9249 2.72257 15.9149 2.61291 15.914 2.50243C15.914 2.22869 16.0349 2.12233 16.3278 2.13717C16.8314 2.1619 17.3401 2.19159 17.8387 2.13717C18.8836 2.02339 20.0126 3.06804 20 4.24462C19.984 5.79717 20 7.34972 20 8.90228C20 11.4703 20 14.0392 20 16.609C20 18.1228 19.1245 18.9819 17.5776 18.9836C15.0294 18.9863 12.4828 18.9871 9.93787 18.986ZM10.0084 5.71142H1.40841C0.774703 5.71142 0.773022 5.71142 0.772183 6.31991C0.772183 8.28499 0.772183 10.2492 0.772183 12.2127C0.772183 13.682 0.772183 15.1521 0.772183 16.6213C0.772183 17.5192 1.37987 18.2572 2.40975 18.2514C7.48529 18.2217 12.5608 18.239 17.6364 18.2374C18.6327 18.2374 19.2311 17.6503 19.2311 16.6766C19.2311 13.2136 19.2311 9.75235 19.2311 6.2927C19.2311 5.71967 19.2244 5.71555 18.6503 5.71555L10.0084 5.71142Z"
+                  fill="black" />
+                <path
+                  d="M13.3568 1.97304C13.3568 1.63086 13.3392 1.28704 13.3568 0.94652C13.3912 0.407291 13.7505 0.0576991 14.286 0.00657946C14.8601 -0.0478382 15.3595 0.248161 15.4569 0.77255C15.6084 1.61061 15.5913 2.46973 15.4065 3.30132C15.3125 3.73419 14.819 4.00628 14.3288 3.96093C13.8109 3.91393 13.4055 3.54867 13.3635 3.03995C13.3316 2.68624 13.3577 2.3284 13.3577 1.97221L13.3568 1.97304Z"
+                  fill="black" />
+                <path
+                  d="M6.65171 1.96566C6.65171 2.29546 6.66346 2.62527 6.65171 2.95507C6.62485 3.54954 6.18923 3.96262 5.60336 3.96592C5.32759 3.97212 5.06059 3.87052 4.86103 3.68346C4.66147 3.49639 4.54567 3.23915 4.53907 2.96826C4.5206 2.2831 4.51976 1.59628 4.53907 0.911111C4.55502 0.380127 5.00994 0.00415039 5.58573 0.00415039C6.16153 0.00415039 6.61478 0.36941 6.64583 0.899569C6.66766 1.25493 6.65003 1.61277 6.65003 1.97143L6.65171 1.96566Z"
+                  fill="black" />
+                <path
+                  d="M14.3779 11.995C14.4182 14.2789 12.5951 16.3434 9.95198 16.3022C7.53885 16.2643 5.62682 14.518 5.62598 11.9274C5.62598 9.5363 7.58586 7.66302 10.067 7.67126C12.5061 7.67786 14.3821 9.56103 14.3779 11.995ZM9.99899 15.2559C11.7935 15.2658 13.3329 13.7718 13.3404 12.0222C13.3472 10.2511 11.7843 8.68046 10.0258 8.69365C8.19606 8.70684 6.65166 10.2281 6.65838 12.0107C6.66761 13.7578 8.19942 15.2452 9.99899 15.2559Z"
+                  fill="black" />
+                <path
+                  d="M10.5983 10.5125C10.5983 11.3857 10.5983 11.3848 11.4846 11.3865C11.6526 11.3763 11.8213 11.3815 11.9883 11.4022C12.324 11.4632 12.5045 11.6833 12.4919 12.0123C12.4801 12.3256 12.2955 12.5268 11.9631 12.5433C11.6307 12.5598 11.3201 12.5589 10.9987 12.5532C10.7133 12.5474 10.5916 12.6768 10.5975 12.9522C10.6033 13.2408 10.6067 13.5294 10.5916 13.8171C10.5706 14.2203 10.3591 14.4347 10.0082 14.4331C9.6876 14.4331 9.4316 14.175 9.41314 13.8122C9.39887 13.5244 9.39887 13.235 9.41314 12.9465C9.42741 12.6579 9.31074 12.5416 9.01948 12.5523C8.71228 12.5631 8.4034 12.5598 8.0962 12.5466C7.76466 12.5317 7.51873 12.3817 7.50866 12.0304C7.49858 11.6792 7.70254 11.4533 8.05171 11.4096C8.38664 11.3815 8.72299 11.3732 9.05893 11.3848C9.30486 11.3848 9.41733 11.2777 9.41314 11.0361C9.41314 10.7615 9.41314 10.4861 9.41314 10.2116C9.42405 9.77952 9.63137 9.53052 9.97214 9.52887C10.3641 9.52887 10.6092 9.79684 10.6033 10.2248C10.5975 10.3204 10.5983 10.4169 10.5983 10.5125Z"
+                  fill="black" />
+              </svg>
+              &nbsp;&nbsp;Book a meeting</a>
+          </li>
+        </ul>
+    </header>
+    <main class="hero">
+      <div class="hero__text"><b>No Sales Pitch.</b></div>
+      <div class="hero__video">
+        <script src="https://fast.wistia.com/embed/medias/1na1a0hc6v.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding" style="padding:56.56% 0 0 0;position:relative;">
+          <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+            <div class="wistia_embed wistia_async_1na1a0hc6v seo=false videoFoam=true"
+              style="height:100%;position:relative;width:100%">
+              <div class="wistia_swatch"
+                style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                <img src="https://fast.wistia.com/embed/medias/1na1a0hc6v/swatch"
+                  style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true"
+                  onload="this.parentNode.style.opacity=1;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="hero__img" src="assets/img/shopify-experts.png" alt="Shopify">
+      <div class="hero__buttons">
+        <a class="phone" href="tel:(888)2224831"><svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 6.83049C0.0247036 4.50234 1.21048 2.90939 3.25071 2.49696C4.52367 2.24293 5.02937 2.56271 5.36796 3.83438C5.60627 4.72051 5.82715 5.61412 6.09453 6.49278C6.38516 7.44615 6.11487 8.18584 5.3912 8.81644C4.56872 9.53073 4.54401 9.78626 5.18921 10.6784C6.16813 12.0719 7.29336 13.3503 8.54455 14.4904C9.53124 15.3661 9.8335 15.3407 10.7068 14.3783C11.2242 13.809 11.8011 13.5176 12.5858 13.7731C13.4141 14.0436 14.27 14.2214 15.0983 14.4979C16.6328 14.9999 17.0949 16.0146 16.5514 17.6045C16.2158 18.5938 15.5226 19.205 14.5955 19.5711C13.8106 19.8804 12.9729 20.0229 12.133 19.99C11.293 19.9571 10.4683 19.7495 9.70853 19.3798C4.8608 17.1039 1.52436 13.4025 0.132233 8.00802C0.036325 7.63294 0.0421415 7.22947 0 6.83049Z"
+              fill="#003F4F" />
+            <path
+              d="M18.9867 11.0654C19.0332 11.7737 18.9678 12.2609 18.3764 12.3446C17.7849 12.4283 17.5132 11.9829 17.4246 11.448C17.2584 10.2916 16.9689 9.15755 16.5614 8.06633C15.3858 5.10757 13.2569 3.16346 10.4349 1.95306C10.1225 1.81857 9.79695 1.71247 9.49615 1.55557C9.4051 1.5177 9.32246 1.46125 9.25323 1.38961C9.18399 1.31798 9.1296 1.23265 9.09333 1.13879C9.05707 1.04494 9.03969 0.944486 9.04224 0.843524C9.04478 0.742561 9.06721 0.64318 9.10816 0.551381C9.25348 0.116533 9.59061 -0.085199 10.0266 0.0388298C10.4686 0.165281 10.9005 0.326647 11.3184 0.521493C15.8435 2.61354 18.4171 6.18348 18.9867 11.0654Z"
+              fill="#003F4F" />
+            <path
+              d="M15.8174 10.9399C15.8378 11.4644 15.7317 11.9337 15.1461 11.9979C14.5924 12.0592 14.3221 11.6647 14.2059 11.1596C14.0998 10.7008 14.0475 10.2271 13.9153 9.77735C13.2759 7.53586 11.8649 5.99522 9.80283 5.05828C9.6052 4.96862 9.39885 4.89391 9.20122 4.80126C8.77981 4.60251 8.52551 4.28721 8.69843 3.79558C8.87136 3.30395 9.25209 3.10968 9.7418 3.24417C10.464 3.45562 11.1485 3.78508 11.769 4.21996C14.1376 5.81291 15.5065 8.04095 15.8174 10.9399Z"
+              fill="#003F4F" />
+            <path
+              d="M12.7632 10.7247C12.7908 11.2537 12.631 11.6796 12.073 11.7707C11.4917 11.8708 11.2156 11.4719 11.1444 10.9608C10.9148 9.34843 10.0269 8.32332 8.57814 7.74203C8.11023 7.55375 7.91841 7.15775 8.11168 6.65267C8.29187 6.17897 8.66678 6.08184 9.12889 6.18196C10.9453 6.58244 12.7458 8.82243 12.7632 10.7247Z"
+              fill="#003F4F" />
+          </svg>&nbsp;&nbsp;(888)222-4831</a>
+        <a class="calendar"
+          href="https://calendly.com/solvedpuzzleagency/shopify-design-web-development?back=1&month=2022-06"><svg
+            width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.93787 18.986C7.40639 18.986 4.87492 18.9531 2.34428 18.9992C2.03442 19.0046 1.72663 18.9485 1.43934 18.8343C1.15206 18.7202 0.891173 18.5502 0.672306 18.3347C0.453438 18.1191 0.281083 17.8624 0.165561 17.5799C0.0500395 17.2975 -0.00627651 16.995 -1.84565e-05 16.6906C0.0184472 12.6101 0.00501559 8.52795 0.00837298 4.44992C0.00837298 3.56852 0.323969 2.84378 1.13226 2.37628C1.36999 2.22949 1.64466 2.15069 1.92545 2.14871C2.52642 2.14871 3.12823 2.16273 3.72921 2.14047C4.03976 2.12893 4.11782 2.27074 4.12286 2.53211C4.1279 2.79348 4.08509 3.08536 4.1791 3.35003C4.39397 3.95522 5.18128 4.4425 5.76043 4.33944C6.51584 4.20669 7.03876 3.62459 7.05806 2.89077C7.07737 2.15696 7.07821 2.14871 7.81348 2.14871H12.3023C12.9276 2.14871 12.9276 2.14871 12.9436 2.75803C12.9646 3.56027 13.3498 4.09126 14.0448 4.27842C14.2685 4.33726 14.5031 4.3442 14.73 4.2987C14.9569 4.2532 15.1699 4.1565 15.3523 4.01625C15.5346 3.87599 15.6813 3.69602 15.7807 3.49054C15.88 3.28505 15.9294 3.05969 15.9249 2.83223C15.9249 2.72257 15.9149 2.61291 15.914 2.50243C15.914 2.22869 16.0349 2.12233 16.3278 2.13717C16.8314 2.1619 17.3401 2.19159 17.8387 2.13717C18.8836 2.02339 20.0126 3.06804 20 4.24462C19.984 5.79717 20 7.34972 20 8.90228C20 11.4703 20 14.0392 20 16.609C20 18.1228 19.1245 18.9819 17.5776 18.9836C15.0294 18.9863 12.4828 18.9871 9.93787 18.986ZM10.0084 5.71142H1.40841C0.774703 5.71142 0.773022 5.71142 0.772183 6.31991C0.772183 8.28499 0.772183 10.2492 0.772183 12.2127C0.772183 13.682 0.772183 15.1521 0.772183 16.6213C0.772183 17.5192 1.37987 18.2572 2.40975 18.2514C7.48529 18.2217 12.5608 18.239 17.6364 18.2374C18.6327 18.2374 19.2311 17.6503 19.2311 16.6766C19.2311 13.2136 19.2311 9.75235 19.2311 6.2927C19.2311 5.71967 19.2244 5.71555 18.6503 5.71555L10.0084 5.71142Z"
+              fill="black" />
+            <path
+              d="M13.3568 1.97304C13.3568 1.63086 13.3392 1.28704 13.3568 0.94652C13.3912 0.407291 13.7505 0.0576991 14.286 0.00657946C14.8601 -0.0478382 15.3595 0.248161 15.4569 0.77255C15.6084 1.61061 15.5913 2.46973 15.4065 3.30132C15.3125 3.73419 14.819 4.00628 14.3288 3.96093C13.8109 3.91393 13.4055 3.54867 13.3635 3.03995C13.3316 2.68624 13.3577 2.3284 13.3577 1.97221L13.3568 1.97304Z"
+              fill="black" />
+            <path
+              d="M6.65171 1.96566C6.65171 2.29546 6.66346 2.62527 6.65171 2.95507C6.62485 3.54954 6.18923 3.96262 5.60336 3.96592C5.32759 3.97212 5.06059 3.87052 4.86103 3.68346C4.66147 3.49639 4.54567 3.23915 4.53907 2.96826C4.5206 2.2831 4.51976 1.59628 4.53907 0.911111C4.55502 0.380127 5.00994 0.00415039 5.58573 0.00415039C6.16153 0.00415039 6.61478 0.36941 6.64583 0.899569C6.66766 1.25493 6.65003 1.61277 6.65003 1.97143L6.65171 1.96566Z"
+              fill="black" />
+            <path
+              d="M14.3779 11.995C14.4182 14.2789 12.5951 16.3434 9.95198 16.3022C7.53885 16.2643 5.62682 14.518 5.62598 11.9274C5.62598 9.5363 7.58586 7.66302 10.067 7.67126C12.5061 7.67786 14.3821 9.56103 14.3779 11.995ZM9.99899 15.2559C11.7935 15.2658 13.3329 13.7718 13.3404 12.0222C13.3472 10.2511 11.7843 8.68046 10.0258 8.69365C8.19606 8.70684 6.65166 10.2281 6.65838 12.0107C6.66761 13.7578 8.19942 15.2452 9.99899 15.2559Z"
+              fill="black" />
+            <path
+              d="M10.5983 10.5125C10.5983 11.3857 10.5983 11.3848 11.4846 11.3865C11.6526 11.3763 11.8213 11.3815 11.9883 11.4022C12.324 11.4632 12.5045 11.6833 12.4919 12.0123C12.4801 12.3256 12.2955 12.5268 11.9631 12.5433C11.6307 12.5598 11.3201 12.5589 10.9987 12.5532C10.7133 12.5474 10.5916 12.6768 10.5975 12.9522C10.6033 13.2408 10.6067 13.5294 10.5916 13.8171C10.5706 14.2203 10.3591 14.4347 10.0082 14.4331C9.6876 14.4331 9.4316 14.175 9.41314 13.8122C9.39887 13.5244 9.39887 13.235 9.41314 12.9465C9.42741 12.6579 9.31074 12.5416 9.01948 12.5523C8.71228 12.5631 8.4034 12.5598 8.0962 12.5466C7.76466 12.5317 7.51873 12.3817 7.50866 12.0304C7.49858 11.6792 7.70254 11.4533 8.05171 11.4096C8.38664 11.3815 8.72299 11.3732 9.05893 11.3848C9.30486 11.3848 9.41733 11.2777 9.41314 11.0361C9.41314 10.7615 9.41314 10.4861 9.41314 10.2116C9.42405 9.77952 9.63137 9.53052 9.97214 9.52887C10.3641 9.52887 10.6092 9.79684 10.6033 10.2248C10.5975 10.3204 10.5983 10.4169 10.5983 10.5125Z"
+              fill="black" />
+          </svg>
+          &nbsp;&nbsp;Book a meeting</a>
+        <a class="download klaviyo-download-list" href="#">Download Pricelist</a>
+        <a class="arrow" href=""></a>
+      </div>
+      <div class="hero__icon-home">
+        <img class="icon-home" src="assets/img/Icon-home.png" alt="">
+        <img class="icon-home-mobile" src="assets/svg/icon-home-mobile.svg" alt="">
+      </div>
+    </main>
+  </div>
+
+  <!-- Icons Section -->
+  <div class="icon-section">
+    <h3>Generate More Revenue with Our <br>Shopify Web Design Services</h3>
+  </div>
+  <div class="grid4">
+    <div class="column4 ">
+      <img class="iconimages" src="images/iconos/handicon.svg" alt="">
+      <p>Handcrafted Design</p>
+    </div>
+    
+    <div class="column4 ">
+      <img class="iconimages" src="images/iconos/quickicon.svg" alt="">
+      <p class="iconp">Quicker Turn Around</p>
+    </div>
+    
+    <div class="column4">
+      <img class="iconimages" src="images/iconos/fasticon.svg" alt="">
+      <p>Faster Loading Time</p>
+    </div>
+    
+    <div class="column4">
+      <img class="iconimages" src="images/iconos/usericon.svg" alt="">
+      <p>User friendly Design</p>
+    </div>
+  </div>
+ 
+<!-- Leonardo -->
+
+
+  <!-- <div class=".container-lg"> -->
+    <div class="4grid whybook mt-4">
+      <div class="col-lg-12">
+        <h1 class="booktitle">Why <span class="remark">Book a call</span> with me?</h1>
+      </div>
+      <div class="row d-flex justify-content-center book_tcont">
+        <ol class="col-lg-4" id="dotsyellow" style="flex-direction:column !important ;">
+          <li>
+            <h1 class="booklisttitle">Experience</h1>
+            <p class="bookpara">
+              Your own personal team of experts. We put communication at the forefront of everything we do.
+            </p>
+
+          </li>
+          <li>
+            <h1 class="booklisttitle">Transparent Reporting </h1>
+            <p class="bookpara">Know exactly what is happening with your website, we are trusted by brands worldwide.
+            </p>
+          </li>
+          <li>
+            <h1 class="booklisttitle">Dedicated Project Manager</h1>
+            <p class="bookpara"> Your own personal team of experts. We put communication at the forefront of everything
+              we do.</p>
+          </li>          
+        </ol>
+        <ol class="col-lg-4">
+          <img  class="leoimagen" src="assets/img/leonardo-barros-ceo-optimized-980x980.png" alt="">
+        </ol>
+      </div>
+    </div>
+
+  <!-- Questions -->
+  <div class="questions">
+    <div class="questions-body">
+      <div class="questions-header">
+        Have Any Questions?
+      </div>
+      <div class="questions-description">
+        No time for a call? No problem! Send us any questions you might have and we’ll get back to you ass soon as possible.
+      </div>
+
+
+      <div class="questions-success questions-sumbit-response" style="display: none;">
+        <span class="question-bold">Thank you for contacting us!</span> We will get back to you as soon as possible.
+      </div>
+       <div class="question-error questions-sumbit-response" style="display: none;">
+        <span class="question-bold">We can't send your email.</span> Please try again.
+      </div>
+      <div class="questions-form">
+        <form action="sendQuestionForm.php" id="questions-form">  
+          <div class="questions-row">
+            <div class="questions-col questions-col-left">
+              <label class="questions-label">First Name</label>
+              <input type="text" required name="first_name" class="questions-input-text" value="">
+            </div>
+            <div class="questions-col questions-col-right">
+              <label class="questions-label">Last Name</label>
+              <input type="text" required name="last_name" class="questions-input-text" value="">
+            </div>    
+          </div> 
+
+          <div class="questions-row">
+            <div class="questions-col questions-col-left">
+              <label class="questions-label">Email</label>
+              <input type="email" required name="email" class="questions-input-text" value="">
+            </div>
+            <div class="questions-col questions-col-right">
+              <label class="questions-label">Business</label>
+              <input type="text" required name="business" class="questions-input-text" value="">
+            </div>    
+          </div>
+
+          <div class="questions-row">
+            <div class="questions-row-area">
+              <label class="questions-label">How can we help you?</label>
+              <textarea required name="question" class="questions-input-area"></textarea>
+            </div>
+          </div>
+          
+          <div class="questions-row">
+            <button class="questions-button">Send Question</button>
+          </div> 
+        </form>
+      </div>    
+    </div>  
+  </div>  
+
+<script>
+$("#questions-form").submit(function(e) {
+
+    e.preventDefault(); 
+
+    var form = $(this);
+    var actionUrl = form.attr('action');
+    $.ajax({
+        type: "POST",
+        url: actionUrl,
+        data: form.serialize(),
+        success: function(data)
+        {
+          $(".questions-form").hide();
+          
+          console.log(data); 
+          if(data=="1"){
+            console.log("Success"); 
+            $( ".questions-success" ).show();
+          }else{
+            $( ".question-error" ).show();
+          }
+
+          $("html, body").animate({
+            scrollTop: $(".questions").offset().top
+          }, 0); 
+        }
+    });
+    
+});
+</script>
+
+
+
+  <!-- Like what you see -->
+
+  <div class="container-fluid">
+    <div class="row stepcont ml-0 mr-0 pl-0 pr-0">
+      <div class="col-md-12 steptext ">
+        <h3 class="toptext">Like what you see?</h3>
+        <h1 class="subtext">Let’s work <span class="remark">together</span></h1>
+      </div>
+      <ul id="progressbar" class="progressbarDesktop">
+        <li><div class="desktop-progress-text">Talk to a <span class="remark">specialist</span></div></li>
+        <li><div class="desktop-progress-text">Get a<span class="remark"> custom proposal</span></div></li>
+        <li><div class="desktop-progress-text">We implement<span class="remark">a solution together</span></div> </li>
+      </ul>
+      <div class="progressbarMobile">
+          <div class="progress-line"></div>
+          
+          <div class="progress-row">
+            <div class="progress-step">
+              <div class="step-circle">1</div>
+            </div>
+            <div class="progress-text">
+              Talk to a <span class="progress-bold">specialist</span>
+            </div>
+          </div>
+
+          <div class="progress-row">
+            <div class="progress-step">
+              <div class="step-circle">2</div>
+            </div>
+            <div class="progress-text">
+              Get a <span class="progress-bold">custom proposal</span>
+            </div>
+          </div>
+
+          <div class="progress-row">
+            <div class="progress-step">
+              <div class="step-circle">3</div>
+            </div>
+            <div class="progress-text">
+             We implement <span class="progress-bold">a solution together</span>
+            </div>
+          </div>          
+      </div>  
+      <div class="col-md-12 d-flex justify-content-center mb-5 mt-5">
+        <a class="btn stepbutton" href="https://calendly.com/solvedpuzzleagency/shopify-design-web-development?back=1&month=2022-06 ">GET A PROPOSAL</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- portafolio -->
+  <div class="title-portafolios" >
+    <h5>Shopify Experts, Designers & Developers</h5>
+    <p>There is an extremely good chance we have helped an ecommerce brand similar to yours grow faster with Shopify design and development work. No matter if you’re on Shopify already or looking to re-platform.</p>
+  </div>
+
+  <div class = "holder portafolio-box">
+    <div class = "container-md">
+        
+        <div class = "scroll-list">
+
+            <div class = "scroll-item"></div>
+            <div class="title-portafolio">
+              <h5>Caviar Online Store</h5>
+              <img class="img-portafolio-mob" src="/assets/img/caviar-mob.png">
+              <div class="author">Inna Polutska – Founder</div>
+                <span><p>“When I met them, my online store wasn’t doing very well, I had built my website from scratch, and my sales were very low. After we started working together, my business tripled its online sales. I highly recommend working with them.”</p></span>
+            </div>
+
+            
+            <div class="title-portafolio">
+              <h5>Betta Fish Online Store</h5>
+              <img class="img-portafolio-mob" src="/assets/img/bettas-mob.png">
+              <div class="author">Jordan Alvarez - Founder</div>              
+                <span><p>“They truly are a great team of professionals that care for our business and take the time to explain the process in detail. We LOVE our results, thanks for the hard work!”</p></span>
+            </div>
+            <div class = "scroll-item"></div>
+
+            <div class = "scroll-item"></div>
+            <div class="title-portafolio">
+              <h5>Sunglasses Online Store</h5>
+              <img class="img-portafolio-mob" src="/assets/img/trendy-mob.png">
+              <div class="author">Diana Trillos - Co Founder</div>
+                <span><p>“It was such a relief to have a full team helping me optimize my website. They are extremely detailed oriented and guided me through the whole process. I absolutely recommend them, they will help you achieve your store goals.”</p></span>
+            </div>
+
+            <div class="title-portafolio">
+              <h5>Cocktail Kits Online Store</h5>
+              <img class="img-portafolio-mob" src="/assets/img/cocktail-mob.png">
+              <div class="author">Chris Yee - Co Founder</div>
+                <span><p>“We were hesitant to redesign or performing any changes on our website that might affect our SEO. Solved Puzzle has done a great job making the process smooth, creating mockups on every single change. It has been a great experience.”</p></span>
+            </div>
+            <div class = "scroll-item"></div>
+            
+
+        </div>
+    </div>
+</div>
+
+<!-- CTA -->
+  <div class="container-fluid " id="talkcontain">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-12 mt-5 text-center ">
+        <h3 id="talkco_title">Ready to bring your shopify store to life?</h3>
+        <p id="talkco_p">Talk to a specialist <span id="talkco_remark">Today!</span></p>
+       
+
+      </div>
+      <div class="col-md-12 text-center px-5 " id="buttoncol">
+        <a href="https://calendly.com/solvedpuzzleagency/shopify-design-web-development?back=1&month=2022-06 " >
+          <button id="talkbook_btn"><span class="talkbook_btn_text">BOOK A MEETING</span></button></a>
+        <button id="proposal_btn" class="klaviyo-download-list">DOWNLOAD PRICE LIST</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="container-lg container-faq">
+    <div class="row ">
+      <div class="col-lg-6 faqtitle">
+        <div class="blue-column">
+          <p><b>Frequently Asqued</b>
+          </br><span class="subrayado" >Questions</span></p>
+        </div>
+      </div>
+      <div class="col-lg-6 faquestions" ><!-- FIRST TAB -->
+        <div class="tab">
+          <input id="tab-1" type="checkbox">
+          <label for="tab-1">What makes us different from other agencies?</label>
+          <div class="content"><p>We get results, communicate clearly, make you look great, answer the phone and get your back when you need it the most. No buzzwords, no complications.</p></div>
+        </div>
+        
+        <!-- SECOND TAB -->
+        <div class="tab">
+          <input id="tab-2" type="checkbox">
+          <label for="tab-2">When I book a call, will I speak with an expert or a sales agent who will waste my time?</label>
+          <div class="content"><p>No sales pitch, during this call, an expert will ask you some questions to better understand your needs. If we are a good fit, we will send you a custom proposal within 72 hours and if we are not, we’ll tell you right away and point you in the right direction.</p></div>
+        </div>
+        
+        <!-- THIRD TAB -->
+        <div class="tab">
+          <input id="tab-3" type="checkbox">
+          <label for="tab-3">Who will be in charge of my project?</label>
+          <div class="content"><p>You will get a dedicated account manager working with you 1-on-1. </p></div>
+        </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="col-md-12" id="talkcontain2">
+  <h4 id="talkco_title2">Our Shopify Custom Design Proces</h4>
+</div>
+        
+  <!---Custom Design-->
+  <div class="">
+
+    <div class="custom-row">
+      <div class="custom-col">
+        <div class="custom-col-text">
+          <div class="custom-icon-box">
+            <img class="" src="images/iconos/Group.svg" alt="">
+            <h4 class="custom_title">Discovery</h4>
+          </div>
+          <p class="custom_p1">We ask you some questions to understand your project and capture your vision.</p>
+          <p class="custom_p2"></p>
+        </div>
+      </div>
+      <div class="custom-col custom-col-light-bg" >
+        <img class="img-custom" src="images/custom/Group 166.png" alt="">
+      </div>
+    </div>
+
+    <div class="custom-row custom-row-reverse">
+      <div class="custom-col">
+        <div class="custom-col-text">
+          <div class="custom-icon-box">
+            <img class="" src="images/iconos/disco2.svg" alt="">
+            <h4 class="custom_title">Design</h4>
+          </div>
+          <p class="custom_p1">Beautiful, friendly, and intuitive design with the latest technology and best user experience practices</p>
+          <p class="custom_p2"></p>
+        </div>
+      </div>
+      <div class="custom-col custom-col-blue-bg" >
+        <img class="img-custom" src="images/custom/custom2.png" alt="">
+      </div>
+    </div>
+
+    <div class="custom-row">
+      <div class="custom-col">
+        <div class="custom-col-text">
+          <div class="custom-icon-box">
+            <img class="" src="images/iconos/codingi.svg" alt="">
+            <h4 class="custom_title">Develop</h4>
+          </div>
+          <p class="custom_p1">When the design is ready, it is time to develop a website with all features and functions. For our team, website development has no limit.</p>
+          <p class="custom_p2"></p>
+        </div>
+      </div>
+      <div class="custom-col custom-col-blue-bg">
+        <img class="img-custom"  src="images/custom/custom3.png" alt="">
+      </div>
+    </div>
+
+    <div class="custom-row custom-row-reverse">
+      <div class="custom-col">
+        <div class="custom-col-text">
+          <div class="custom-icon-box">
+            <img class="" src="images/iconos/deliveri.svg" alt="">
+            <h4 class="custom_title">Delivery</h4>
+          </div>
+          <p class="custom_p1">Our team will connect your brand new website to your domain.</p>
+          <p class="custom_p2"></p>
+        </div>
+      </div>
+      <div class="custom-col custom-col-light-bg">
+        <img class="img-custom"  src="images/custom/custom4.png" alt="">
+      </div>
+    </div>
+
+
+  </div>
+
+
+<!-- Calendar -->
+
+
+<!-- Testimonials videos -->
+
+<div class="vid-container">
+  <div class="clients">
+    <p>What our <b>clients say</b></p>
+  </div>      
+
+  <div class="vid-row">
+    <div class="vid-col">
+        <div class="vid-header">
+          <h5 class="vid-review-author">Inna Polutska</h5>
+          <p class="vid-review-company">Bester caviar</p>
+        </div>      
+        <video class="vid-video" poster="assets/img/poster-caviar.jpg" controls>
+          <source src="https://solvedpuzzle.com/wp-content/uploads/2022/02/Inna-Testimonial-1-1.m4v" type="video/mp4">
+        </video>
+        <div class="vid-metrics">
+          <div class="vid-metrics-row  vid-metrics-number">
+            <div class="vid-metrics-col">
+              +5.2
+            </div>  
+            <div class="vid-metrics-col">
+              +257%
+            </div>  
+          </div>
+
+          <div class="vid-metrics-row vid-metrics-leyend">
+            <div class="vid-metrics-col">
+              ROAS in 8 weeks
+            </div>  
+            <div class="vid-metrics-col">
+                Website traffic in 6 months
+            </div>  
+
+          </div>
+        </div>
+    </div>
+    <div class="vid-col">
+        <div class="vid-header">
+          <h5 class="vid-review-author">Marlon Castro</h5>
+          <p class="vid-review-company">Dimark Garage Doors</p>
+        </div>      
+        <video class="vid-video"  poster="assets/img/poster-dimark.jpg" controls>
+          <source src="https://solvedpuzzle.com/wp-content/uploads/2022/02/Marlon-Testimonial-1-1.m4v" type="video/mp4">
+        </video>
+        <div class="vid-metrics">
+          <div class="vid-metrics-row  vid-metrics-number">
+            <div class="vid-metrics-col">
+              +554%
+            </div>  
+            <div class="vid-metrics-col">
+              +375%
+            </div>  
+          </div>
+
+          <div class="vid-metrics-row vid-metrics-leyend">
+            <div class="vid-metrics-col">
+              Increase in organic traffic
+            </div>  
+            <div class="vid-metrics-col">
+                Increase on online leads
+            </div>  
+
+          </div>
+        </div>
+    </div>
+      <div class="vid-col">
+        <div class="vid-header">
+          <h5 class="vid-review-author">Diana Jendy</h5>
+          <p class="vid-review-company">Trendy Jendy</p>
+        </div>      
+        <video class="vid-video" poster="assets/img/poster-trendy.jpg"  controls>
+          <source src="assets/videos/trendy.mp4" type="video/mp4">
+        </video>
+        <div class="vid-metrics">
+          <div class="vid-metrics-row  vid-metrics-number">
+            <div class="vid-metrics-col">
+              +3X
+            </div>  
+            <div class="vid-metrics-col">
+              +321%
+            </div>  
+          </div>
+
+          <div class="vid-metrics-row vid-metrics-leyend">
+            <div class="vid-metrics-col">
+              ROAS in 12 weeks
+            </div>  
+            <div class="vid-metrics-col">
+                Increase in organic traffic
+            </div>  
+
+          </div>
+        </div>
+    </div>
+
+  </div>
+</div>
+      
+           
+        
+<!-- Review -->
+<div class="reviews">
+    <div class="reviews-header">
+      <div class="reviews-stars-big">
+        <img src="assets/img/stars.png">
+      </div>  
+      <div class="reviews-title">
+        125+&nbsp;&nbsp;Five-Star Reviews
+      </div>  
+
+    </div>  
+
+  <div class="reviews-body">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <div>
+                <img src="assets/img/min-stars.png">
+              </div>            
+              <div class="review-desc">
+                We really appreciate your help, the results are incredible
+              </div>
+            </div>
+            <div class="review-author-row">
+              <div class="review-author-col review-author-col-left">
+                <img src="assets/img/min-google.png">
+              </div>
+              <div class="review-author-col">
+                <div class="review-author">Brice</div>
+                <div class="review-company">US Visa Appointments</div>                
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <div>
+                <img src="assets/img/min-stars.png">
+              </div>            
+              <div class="review-desc">
+                They did an amazing job with our new website and marketing strategy
+              </div>
+            </div>
+            <div class="review-author-row">
+              <div class="review-author-col review-author-col-left">
+                <img src="assets/img/min-yelp.png">
+              </div>
+              <div class="review-author-col">
+                <div class="review-author">Sara</div>
+                <div class="review-company">PromoItalia</div>                
+              </div>
+            </div>
+          </div>
+            <div class="swiper-slide">
+            <div>
+              <div>
+                <img src="assets/img/min-stars.png">
+              </div>            
+              <div class="review-desc">
+                They were really fast and reliable, and their customer service is the best. I would recommend them to anyone looking for a new website
+              </div>
+            </div>
+            <div class="review-author-row">
+              <div class="review-author-col review-author-col-left">
+                <img src="assets/img/min-facebook.png">
+              </div>
+              <div class="review-author-col">
+                <div class="review-author">Hector</div>
+                <div class="review-company">Wedding Puzzle</div>                
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+</div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper', {          
+          slidesPerView: 1,
+          spaceBetween: 0,
+          navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          },          
+          breakpoints: {   
+            600: {
+              slidesPerView: 2,
+              spaceBetween: 50
+            },                           
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 70
+            }
+      }
+    })
+ 
+  </script>
+
+
+
+
+
+<footer>
+  <div class="container-fluid" id="footercont">
+      <div class="row">
+          <div class="col-md-3 mt-5" >
+              
+              <ul class="list-unstyled spaceul">
+                  <h4 class="footlist_t">Contact</h4>
+                  <p class="footlist_site">Miami</p>
+                  <li>
+                      <p class="footlist_item">990 Biscayne Blvd 503, Miami, FL 33132 <br> (954 892 - 5037)</p>
+                  </li>
+                  <li>
+                      <p class="footlist_item">5334 NE 3rd Ave #3, Miami, FL 33127 <br> (786) 509 - 5229</p>             
+                  </li>
+                  <li>
+                      <p class="footlist_item">400NW 26th St, Miami, FL 33127 <br> (305) 809 - 7290</p>
+                  </li>
+               
+                  <p class="footlist_site">Orlando</p>
+                  <li><p class="footlist_item">4115 ARROW RIDGE, Suite 102, Kissimmee <br> FL 34741</p></li>
+              </ul>
+          </div>
+
+          <div class="col-md-3 mt-5" >
+
+              <ul class="list-unstyled movilul">
+               
+                  <p id="vegas" class="footlist_site">Las Vegas</p>
+                  <li class="footlist_item">
+                      <p >10161 W Park Run Dr Suite 150. Las Vegas, <br> NV 89145 <br> (725) 726 - 8050 </p>
+                  </li>
+
+                  <p class="footlist_site">New York</p>
+
+                  <li>
+                      <p class="footlist_item">51 Hudson PI Suite 3, Weehawken, NJ <br> 07086.  <br> (646) 906-9464</p>
+                  </li>
+
+                  <p class="footlist_site">Seattle</p>
+
+                  <li>
+                      <p class="footlist_item">5430 40th Ave SW, Seattle, WA 98136 <br> (206) 278-1418</p>
+                  </li>
+              </ul>
+
+          </div>
+          <div class="col-md-3 mt-5" >
+              
+              <ul class="list-unstyled movilul">
+                  <h4 class="footlist_t">Services</h4>
+                  <li>
+                      <p class="footlist_item2">Web Design Services</p>
+                  </li>
+                  <li>
+                      <p class="footlist_item2">SEO Services</p>
+                  </li>
+                  <li>
+                      <p class="footlist_item2">PPC Services</p>
+                  </li>
+                  <li>
+                      <p class="footlist_item2">Digital Marketing Services</p>
+                  </li>
+                  <li>
+                      <p class="footlist_item2">Social Media Services</p>
+                  </li>
+                  <li>
+                      <p class="footlist_item2">Digital Advertising Services</p>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-md-3 mt-5" >
+              <ul class="list-unstyled movilul">
+                  <h4 class="footlist_t">Company</h4>
+                  <li>
+                      <p class="footlist_item2">SEO Agency</p>  
+                  </li>
+                  <li>
+                      <p class="footlist_item2">PPC Agency</p>
+                  </li>
+                  <li>
+                      <p class="footlist_item2">Digital Marketing Agency</p>
+                  </li>
+                  <li>
+                      <p class="footlist_item2">Internet Marketing Agency</p>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="container-fluid" id="foot2back">
+      <div class="row ">
+          <div class="col-md-12 ">
+              <h3 id="foot2tittle" class="mt-5 mb-3">Growing Business Since 2014</h3>
+              <p id="foot2sub" class="mb-4">Made With <spa id="hearticon" >♡</spa> in 12 cities</p>
+              <ul class="nav justify-content-center">
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">Miami</a></li>
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">New York</a></li>
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">Las Vegas</a></li>
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">Chicago</a></li>
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">Orlando</a></li>
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">San Jose</a></li>
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">Seattle</a></li>
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">Jacksonville</a></li>
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">Salt Lake City</a></li>
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">San Diego</a></li>
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">Indianapolis</a></li>
+                  <li class="nav-item foot2sites"><a href="#" class="nav-link px-2 text-muted">Milwaukee</a></li>
+                </ul>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid" id="footcopy">
+      <div class="row">
+          <p id="copytext">Copyright Solved Puzzle 2021</p>
+      </div>
+  </div>
+ 
+  
+</footer>
+
+
+<!-- Start of LiveChat (www.livechat.com) code -->
+<script>
+ window.__lc=window.__lc||{};window.__lc.license=14229609;window.__lc.integration_name='Wordpress';(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript><a href="https://www.livechat.com/chat-with/14229609/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- End of LiveChat code -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/showAlert.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<!-- Kalviyo -->
+
+<script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=X5Tqub"></script>
+
+<script type="text/javascript">
+  
+  document.querySelectorAll('.klaviyo-download-list').forEach(item => {
+    item.addEventListener('click', event => {
+          window._klOnsite = window._klOnsite || []; 
+        window._klOnsite.push(['openForm', 'SZZDyF']);      
+  })
+})
+</script>
+</body>
+</html>

@@ -1,103 +1,103 @@
-.icon-section h3{
-  font-size: 40px;
-  text-align: center;
-  font-weight: 700;
-  color: #003F4F;
-}
-
-@media screen and (max-width: 768px) {
-  .icon-section h3{
-    font-size: 30px;
-  }
-}
-
-.icon-section p{
-  font-size: 20px;
-  text-align: center;
-  font-weight: 400;
-  color: #003F4F;
-}
-
-@media screen and (max-width: 768px) {
-  .icon-section p{
-    font-size: 16px;
-  }
-}
-
-
-.icon-section{
-    margin-top: 50px;
-    padding: 0 20px;
-}
-
-
-.grid4 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    
-  }
-  
- 
-  .column4 {
-    flex: 25%;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .column4 p{
-    font-size: 25px;
-    font-weight: 700;
-    margin-top: 20px;
-    color: #003F4F;
-  }
-  
-
-  @media screen and (max-width: 992px) {
-    .column4 {
-      flex: 50%;
-      padding-left: 45px;
-      padding-right: 45px;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .grid4 {
-      flex-direction: row;
-      
-    }
-
-    .icon-section h3{
-      font-size: 20px;
-      text-align: center;
-      font-weight: 700;
-      color: #003F4F;
-    }
-
-    .iconimages{
-      height: 43px;
-      width: 83px;
-
-
-    }
-    .column4 {
-      
-      flex: 40%;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-    .column4 p{
-      
-      font-family: 'Roboto';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 15px;
-      
-      text-align: center;
-
-      color: #003F4F;
-    }
-  }
-
+.icon-section h3{
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  color: #003F4F;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-section h3{
+    font-size: 30px;
+  }
+}
+
+.icon-section p{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: #003F4F;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-section p{
+    font-size: 16px;
+  }
+}
+
+
+.icon-section{
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+
+.grid4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    
+  }
+  
+ 
+  .column4 {
+    flex: 25%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .column4 p{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #003F4F;
+  }
+  
+
+  @media screen and (max-width: 992px) {
+    .column4 {
+      flex: 50%;
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .grid4 {
+      flex-direction: row;
+      
+    }
+
+    .icon-section h3{
+      font-size: 20px;
+      text-align: center;
+      font-weight: 700;
+      color: #003F4F;
+    }
+
+    .iconimages{
+      height: 43px;
+      width: 83px;
+
+
+    }
+    .column4 {
+      
+      flex: 40%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .column4 p{
+      
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      
+      text-align: center;
+
+      color: #003F4F;
+    }
+  }
+
