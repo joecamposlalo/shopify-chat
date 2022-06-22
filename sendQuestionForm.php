@@ -7,7 +7,7 @@ $name = trim(filter_var($_POST['first_name']." ".$_POST['last_name'].", ".$_POST
 $from = filter_var($_POST['email'],FILTER_SANITIZE_EMAIL);
 
 $headers = "From:$name<$from>". "\r\n";    
- mail($to, $subject, $message, $headers);
+ echo mail($to, $subject, $message, $headers);
 	
 
 
